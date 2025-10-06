@@ -1,50 +1,86 @@
-img {
-    border-radius: 75px;
-    animation: bounce 2s infinite;
-    margin-top: 20px;
+h1 {
+    color : rgb(0, 0, 0);
+    font-family : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-align: center;
 }
 
-h2 {
-    font-size: 24px;
+.container {
+  text-align: center;
 }
 
 body {
-    background: linear-gradient(to right, slateblue, lightblue);
-    color: white;
-    font-family: 'Trebuchet MS';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgb(82, 117, 122),rgb(38, 56, 59) ) ;
+    font-family: Magneto;
     text-align: center;
+    align-items: center;
 }
 
-a {
-    background-color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 10px;
-    display: block;
-    text-align: center;
-    margin: 10px;
-    color: slateblue;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s ease;
+.profile{
+    border-radius: 50%;
 }
 
-    a:hover {
-        color: white;
-        background-color: slateblue;
-        transform: scale(1.05);
-    }
 
-@keyframes bounce {
-    40% {
-        transform: translateY(-10px);
-    }
 
-    60% {
-        transform: translateY(-5px);
-    }
+/* CSS */
+.button-56 {
+  align-items: center;
+  background-color: rgb(141, 193, 202);
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #111;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  height: 48px;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 25px 100px;
+  margin-right: 8px; /* space between icon and text */
+  font-size: 18px;
+}
 
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
+.button-56:after {
+  background-color: #111;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform .2s ease-out;
+  z-index: -1;
+}
+
+.button-56:hover:after {
+  transform: translate(0, 0);
+}
+
+.button-56:active {
+  background-color: #0d2b3e;
+  outline: 0;
+}
+
+.button-56:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
 }

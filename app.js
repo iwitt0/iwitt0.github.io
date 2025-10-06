@@ -1,4 +1,3 @@
 function PopUp() {
     alert ("Hello");
 }
-
